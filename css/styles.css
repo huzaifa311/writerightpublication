@@ -60,10 +60,6 @@ body {
     opacity: 0.3;
 }
 
-.swiper, .swiper-wrapper{
-    overflow-x: visible !important;
-}
-
 
 /* Define keyframes for left-right oscillation */
 @keyframes move-left-right {
