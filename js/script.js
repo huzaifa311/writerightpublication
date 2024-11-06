@@ -43,16 +43,18 @@ document.addEventListener("DOMContentLoaded", function () {
     slide.classList.add("swiper-slide", "details-slide", "p-8", "bg-white");
 
     slide.innerHTML = `
+    <div class="relative min-h-[500px]">
           <button class="absolute top-4 right-4 text-gray-500 text-xl close-slide">&times;</button>
-          <h1 class="text-3xl font-bold mb-4">${title}</h1>
+          <h1 class="text-2xl font-bold mb-2">${title}</h1>
           <p class="text-gray-700 mb-6">${description}</p>
-          <ul class="text-blue-700 space-y-2">
+          <ul class="space-y-2 text-sm">
               ${details
                 .split(", ")
                 .map((item) => `<li>${item}</li>`)
                 .join("")}
           </ul>
-          <button class="mt-6 w-full bg-green-500 text-white py-2 rounded-md text-lg">${title} Proofreading and Editing</button>
+          <button class="mt-3 w-full bg-green-500 text-white py-2 rounded-md absolute bottom-3">${title} Proofreading and Editing</button>
+          </div>
       `;
 
     return slide;
