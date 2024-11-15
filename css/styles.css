@@ -131,3 +131,26 @@ body {
 .back {
     transform: rotateY(180deg);
 }
+
+.rating{
+    aspect-ratio: auto 125 / 20;
+}
+
+.imagesofSec{
+    width: 110px;
+    aspect-ratio: auto 110 / 48;
+}
+
+.customPosition{
+    background-position: 60px bottom;
+}
+
+.hide{
+    opacity: 0;
+    display: none;
+}
+
+.conatinerHide:hover .hide{
+    opacity: 1;
+    display: inline;
+}
